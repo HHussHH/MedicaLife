@@ -1,0 +1,155 @@
+//main: ../style.less
+.appointment{
+    background-color: #F6F6F6;
+    padding-bottom: 215px;
+    margin-bottom: 80px;
+}
+.appointment__inner{
+    display: flex;
+}
+
+.appointment__content{
+    margin-top: 146px;
+    margin-left: 18px;
+}
+.appointment__img{
+    position: relative;
+}
+.appointment__img_table{
+    position: absolute;
+    width: 564px;
+    height: 148px;
+    background-color: #FFFFFF;
+    top:587px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+.appointment__img_table__item{
+    text-align: left;
+    position: relative;
+
+
+
+    &::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 5px;
+        background-color: #DCEEFE;
+
+        top:40%;
+        transform: translateY(-40%);
+        left: 68px;
+    }
+
+    &:last-child::after{
+        display: none;
+    }
+}
+
+.appointment__img__text{
+    position: absolute;
+    left: -50%;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: @black;
+    font-family: 'Inter', sans-serif;
+
+}
+.appointment__icon{
+    display: block;
+    background: #DCEEFE;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    fill: #5D636B;
+    transition: fill .2s linear,
+    background .3s linear;
+
+  
+    &:hover{
+        background: #4C40F7;
+        fill: #FFFFFF;
+    }
+
+    &-sm{
+        width: 25px;
+        height: 25px;
+    }
+    margin-bottom: 17px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appointment__suptitle{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: #4C40F7;
+    font-family: 'Inter', sans-serif;
+
+    margin-bottom: 15px;
+}
+
+.appointment__title{
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 77px;
+    color: @black;
+    font-family: 'Inter', sans-serif;
+
+    margin-bottom: 40px;
+}
+
+.appointment__text{
+    color: @black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 2%;
+
+    margin-bottom: 35px;
+}
+
+.appointment__btn{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    color:#F8FAFD;
+    background-color: #4C40F7;
+    padding: 20px 38px;
+    border-radius: 50px;
+
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+

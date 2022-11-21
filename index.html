@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>MedicaLife</title>
+</head>
+<body>
+       <!-- Sprite -->
+<svg style="display: none;">
+
+    <symbol id="consultation" viewBox="0 0 50 50">
+        <g>
+            <path d="M31.7354 17.3059L26.5766 12.1152C26.5403 12.0787 26.4971 12.0497 26.4495 12.03C26.402 12.0102 26.351 12 26.2995 12H15.002C14.5748 12.0005 14.1652 12.1704 13.8631 12.4725C13.561 12.7746 13.3911 13.1841 13.3906 13.6113V35.3887C13.3911 35.8159 13.561 36.2254 13.8631 36.5275C14.1652 36.8296 14.5748 36.9995 15.002 37H30.2377C30.6649 36.9995 31.0745 36.8296 31.3766 36.5275C31.6787 36.2254 31.8486 35.8159 31.8491 35.3887V27.7617L36.9412 22.6695C37.3705 22.2402 37.6117 21.6579 37.6117 21.0508C37.6117 20.4437 37.3705 19.8615 36.9412 19.4322C36.5119 19.0029 35.9297 18.7617 35.3226 18.7617C34.7154 18.7617 34.1332 19.0029 33.7039 19.4322L31.8489 21.2872V17.5811C31.8489 17.478 31.8081 17.3791 31.7354 17.3059ZM32.4551 21.7859L34.5875 23.9183L27.1119 31.3939L24.9795 29.2615L32.4551 21.7859ZM33.5324 20.7085L35.6648 22.8409L35.1398 23.3659L33.0076 21.2334L33.5324 20.7085ZM24.6264 30.0127L26.3529 31.7393L24.1982 32.1411L24.6264 30.0127ZM26.8832 13.532L30.2962 16.9659H26.8832V13.532ZM31.0678 35.3887C31.0676 35.6087 30.98 35.8197 30.8244 35.9754C30.6688 36.131 30.4578 36.2185 30.2377 36.2188H15.002C14.7819 36.2185 14.5709 36.131 14.4153 35.9754C14.2597 35.8197 14.1721 35.6087 14.1719 35.3887V13.6113C14.1721 13.3913 14.2597 13.1803 14.4153 13.0246C14.5709 12.869 14.7819 12.7815 15.002 12.7812H26.1019V17.3564C26.1019 17.46 26.1431 17.5594 26.2163 17.6327C26.2896 17.7059 26.3889 17.7471 26.4925 17.7471H31.0677V22.0684L24.0907 29.0456C24.0363 29.1 23.9992 29.1693 23.984 29.2447L23.3183 32.5542C23.3057 32.6169 23.3086 32.6817 23.3269 32.7429C23.3452 32.8042 23.3782 32.86 23.4231 32.9055C23.4679 32.951 23.5233 32.9848 23.5843 33.004C23.6452 33.0231 23.71 33.027 23.7728 33.0153L27.1233 32.3906C27.2009 32.3762 27.2722 32.3386 27.328 32.2829L31.0678 28.543V35.3887ZM36.3887 19.9847C36.6701 20.2682 36.828 20.6514 36.828 21.0509C36.828 21.4503 36.6701 21.8336 36.3887 22.117L36.2172 22.2885L34.0849 20.1562L34.2563 19.9847C34.5393 19.7023 34.9227 19.5437 35.3225 19.5437C35.7222 19.5437 36.1057 19.7023 36.3887 19.9847ZM22.8652 30.3109C22.8652 30.4145 22.8241 30.5138 22.7508 30.5871C22.6776 30.6604 22.5782 30.7015 22.4746 30.7015H16.3758C16.2722 30.7015 16.1729 30.6604 16.0996 30.5871C16.0264 30.5138 15.9852 30.4145 15.9852 30.3109C15.9852 30.2073 16.0264 30.1079 16.0996 30.0347C16.1729 29.9614 16.2722 29.9203 16.3758 29.9203H22.4745C22.5258 29.9202 22.5766 29.9303 22.624 29.95C22.6714 29.9696 22.7145 29.9983 22.7508 30.0346C22.7871 30.0709 22.8158 30.114 22.8355 30.1614C22.8551 30.2088 22.8652 30.2596 22.8652 30.3109ZM15.9854 26.9066C15.9854 26.803 16.0265 26.7036 16.0998 26.6304C16.173 26.5571 16.2724 26.516 16.376 26.516H24.4343C24.5379 26.516 24.6373 26.5571 24.7105 26.6304C24.7838 26.7036 24.825 26.803 24.825 26.9066C24.825 27.0102 24.7838 27.1095 24.7105 27.1828C24.6373 27.2561 24.5379 27.2972 24.4343 27.2972H16.3758C16.2722 27.2972 16.1729 27.2561 16.0996 27.1828C16.0264 27.1095 15.9852 27.0102 15.9852 26.9066H15.9854ZM15.9854 23.5023C15.9854 23.3987 16.0265 23.2993 16.0998 23.2261C16.173 23.1528 16.2724 23.1117 16.376 23.1117H28.8639C28.9675 23.1117 29.0668 23.1528 29.1401 23.2261C29.2133 23.2993 29.2545 23.3987 29.2545 23.5023C29.2545 23.6059 29.2133 23.7053 29.1401 23.7785C29.0668 23.8518 28.9675 23.8929 28.8639 23.8929H16.3758C16.2722 23.8929 16.1729 23.8518 16.0996 23.7785C16.0264 23.7053 15.9852 23.6059 15.9852 23.5023H15.9854ZM15.9854 20.098C15.9854 19.9944 16.0265 19.8951 16.0998 19.8218C16.173 19.7486 16.2724 19.7074 16.376 19.7074H28.8639C28.9675 19.7074 29.0668 19.7486 29.1401 19.8218C29.2133 19.8951 29.2545 19.9944 29.2545 20.098C29.2545 20.2016 29.2133 20.301 29.1401 20.3743C29.0668 20.4475 28.9675 20.4887 28.8639 20.4887H16.3758C16.2722 20.4887 16.1729 20.4475 16.0996 20.3743C16.0264 20.301 15.9852 20.2016 15.9852 20.098H15.9854ZM15.9854 16.6937C15.9854 16.5901 16.0265 16.4908 16.0998 16.4175C16.173 16.3443 16.2724 16.3031 16.376 16.3031H24.6451C24.7487 16.3031 24.8481 16.3443 24.9213 16.4175C24.9946 16.4908 25.0357 16.5901 25.0357 16.6937C25.0357 16.7973 24.9946 16.8967 24.9213 16.97C24.8481 17.0432 24.7487 17.0844 24.6451 17.0844H16.3758C16.2722 17.0844 16.1729 17.0432 16.0996 16.97C16.0264 16.8967 15.9852 16.7973 15.9852 16.6937H15.9854Z"/>
+            </g>
+    </symbol>
+
+
+    <symbol id="appointment" viewBox="0 0 50 50">
+        <g>
+            <path d="M18.3333 26.5833H17.5067C17.3307 26.0857 16.8612 25.7522 16.3333 25.75H14.25C13.5596 25.75 13 26.3096 13 27V35.75C13 36.4404 13.5596 37 14.25 37H16.3333C16.6869 36.9989 17.0232 36.8474 17.2583 36.5833H27.7083C28.3197 36.5836 28.9192 36.4153 29.4412 36.0971L37.25 31.3433C37.9282 30.9308 38.1882 30.0746 37.8541 29.3545C37.52 28.6345 36.6983 28.2802 35.9454 28.5317C27.2587 31.4279 28.2317 31.1667 27.5996 31.1667C28.1046 29.7658 26.8417 28.25 25.2633 28.25H23.0833C22.3147 28.2491 21.5691 27.9875 20.9683 27.5079C20.2198 26.9107 19.2909 26.5848 18.3333 26.5833V26.5833ZM16.3333 36.1667H14.25C14.0199 36.1667 13.8333 35.9801 13.8333 35.75V27C13.8333 26.7699 14.0199 26.5833 14.25 26.5833H16.3333C16.5635 26.5833 16.75 26.7699 16.75 27V35.75C16.75 35.9801 16.5635 36.1667 16.3333 36.1667ZM25.2633 29.0833C26.3687 29.0833 27.3283 30.2804 26.6675 31.1667H24.1354C23.3127 31.1659 22.5082 31.4095 21.8242 31.8667L21.5187 32.07C21.3273 32.1977 21.2756 32.4565 21.4033 32.6479C21.531 32.8394 21.7898 32.8911 21.9812 32.7633C22.5946 32.2766 23.3525 32.0081 24.1354 32C28.0971 32 28.0633 32.0375 28.4979 31.8933L36.2108 29.3221C36.5609 29.2069 36.9418 29.372 37.097 29.7063C37.2523 30.0406 37.1326 30.4381 36.8187 30.6313L29.0083 35.3854C28.6166 35.6239 28.1669 35.75 27.7083 35.75H17.5833V27.4167C18.53 27.4167 19.4292 27.3438 20.4479 28.1588C21.1966 28.7561 22.1256 29.082 23.0833 29.0833H25.2633Z"/>
+            <path d="M28.8346 27.8333C32.5105 27.8333 35.5013 25.0466 35.5013 21.6212C35.5013 18.2812 29.3834 12.3662 29.123 12.1162C28.9618 11.9617 28.7075 11.9617 28.5463 12.1162C28.2859 12.3662 22.168 18.2812 22.168 21.6212C22.168 25.0466 25.1588 27.8333 28.8346 27.8333ZM28.8346 13C30.6996 14.8492 34.668 19.2733 34.668 21.6221C34.668 24.5871 32.0513 27 28.8346 27C25.618 27 23.0013 24.5871 23.0013 21.6212C23.0013 19.2725 26.9696 14.8483 28.8346 13V13Z"/>
+            <path d="M25.9154 22.8332H27.582V24.4999C27.582 24.9601 27.9551 25.3332 28.4154 25.3332H29.2487C29.7089 25.3332 30.082 24.9601 30.082 24.4999V22.8332H31.7487C32.2089 22.8332 32.582 22.4601 32.582 21.9999V21.1666C32.582 20.7063 32.2089 20.3332 31.7487 20.3332H30.082V18.6666C30.082 18.2063 29.7089 17.8333 29.2487 17.8333H28.4154C27.9551 17.8333 27.582 18.2063 27.582 18.6666V20.3332H25.9154C25.4551 20.3332 25.082 20.7063 25.082 21.1666V21.9999C25.082 22.4601 25.4551 22.8332 25.9154 22.8332ZM25.9154 21.1666H27.582C28.0423 21.1666 28.4154 20.7935 28.4154 20.3332V18.6666H29.2487V20.3332C29.2487 20.7935 29.6218 21.1666 30.082 21.1666H31.7487V21.9999H30.082C29.6218 21.9999 29.2487 22.373 29.2487 22.8332V24.4999H28.4154V22.8332C28.4154 22.373 28.0423 21.9999 27.582 21.9999H25.9154V21.1666Z"/>
+    </symbol>
+
+    <symbol id="treatment" viewBox="0 0 50 50">
+        <g>
+         <path d="M35.4245 17.86C36.3414 16.9843 36.5875 15.6166 36.0335 14.4763C35.4794 13.336 34.252 12.6843 32.997 12.8643C31.742 13.0441 30.7469 14.0143 30.5356 15.2643C30.324 16.5144 30.9446 17.7579 32.0705 18.3406C31.6028 18.7322 31.3317 19.3103 31.3295 19.9203V23.2529H30.0797V19.9203C30.0775 18.4448 28.9744 17.203 27.5095 17.0268C28.3723 16.2042 28.6475 14.9392 28.2045 13.8325C27.7615 12.7256 26.6895 12 25.4974 12C24.3052 12 23.2332 12.7256 22.7902 13.8325C22.3472 14.9392 22.6224 16.2042 23.4852 17.0268C22.0203 17.203 20.9172 18.4448 20.915 19.9203V23.2529H19.6653V19.9203C19.663 19.3103 19.3919 18.7322 18.9242 18.3406C20.0501 17.7579 20.6707 16.5144 20.4592 15.2643C20.2476 14.0143 19.2527 13.0441 17.9977 12.8643C16.7427 12.6843 15.5153 13.336 14.9613 14.4763C14.4072 15.6166 14.6533 16.9843 15.5703 17.86C14.1053 18.0361 13.0022 19.2779 13 20.7534V27.0021C13.0016 28.127 13.6499 29.1507 14.6663 29.6328V37H15.4995V29.8848C15.6362 29.9043 18.4155 29.9182 18.4155 29.9182C18.6456 29.9182 18.8321 30.1047 18.8321 30.3348V37H22.1647V29.085H25.0808V36.1669H23.4145V37H27.5802V36.1669H25.9139V29.085H28.83V37H32.1626V30.3348C32.1626 30.1047 32.3491 29.9182 32.5792 29.9182C32.5792 29.9182 35.3585 29.9043 35.4952 29.8848V37H36.3284V29.6328C37.3448 29.1507 37.9931 28.127 37.9947 27.0021V20.7534C37.9925 19.2779 36.8894 18.0361 35.4245 17.86V17.86ZM31.3295 15.7545C31.3295 14.6042 32.2621 13.6716 33.4123 13.6716C34.5626 13.6716 35.4952 14.6042 35.4952 15.7545C35.4952 16.9048 34.5626 17.8374 33.4123 17.8374C32.2625 17.836 31.3309 16.9044 31.3295 15.7545ZM26.3854 17.8374L25.4974 19.1705L24.6093 17.8374H26.3854ZM23.4145 14.9213C23.4145 13.7711 24.3471 12.8384 25.4974 12.8384C26.6476 12.8384 27.5802 13.7711 27.5802 14.9213C27.5802 16.0716 26.6476 17.0042 25.4974 17.0042C24.3475 17.0028 23.4159 16.0712 23.4145 14.9213ZM21.7481 19.9203C21.7516 18.8538 22.5616 17.9631 23.6228 17.8585L25.4974 20.67L27.372 17.8573C28.4337 17.9619 29.2437 18.8534 29.2466 19.9203V23.2529H27.5802V25.7524H23.4145V23.2529H21.7481V19.9203ZM15.4995 15.7545C15.4995 14.6042 16.4321 13.6716 17.5824 13.6716C18.7326 13.6716 19.6653 14.6042 19.6653 15.7545C19.6653 16.9048 18.7326 17.8374 17.5824 17.8374C16.4325 17.836 15.5009 16.9044 15.4995 15.7545ZM21.3316 36.1669H19.6653V30.3348C19.6653 29.6446 19.1057 29.085 18.4155 29.085H15.916C14.7662 29.0836 13.8346 28.152 13.8332 27.0021V20.7534C13.8346 19.6036 14.7662 18.672 15.916 18.6705H17.5824C18.2725 18.6705 18.8321 19.2301 18.8321 19.9203V24.0861H22.5813V25.7524H17.5824C17.3523 25.7524 17.1658 25.5659 17.1658 25.3358V20.3369H16.3326V25.3358C16.3326 26.026 16.8922 26.5855 17.5824 26.5855H19.2487C20.3985 26.587 21.3301 27.5186 21.3316 28.6684V36.1669ZM22.1314 28.2519C22.0402 27.6185 21.7429 27.0328 21.2854 26.5855H29.7093C29.2518 27.0328 28.9545 27.6185 28.8633 28.2519H22.1314ZM37.1615 27.0021C37.1601 28.152 36.2285 29.0836 35.0787 29.085H32.5792C31.889 29.085 31.3295 29.6446 31.3295 30.3348V36.1669H29.6631V28.6684C29.6646 27.5186 30.5962 26.587 31.746 26.5855H33.4123C34.1025 26.5855 34.6621 26.026 34.6621 25.3358V20.3369H33.8289V25.3358C33.8289 25.5659 33.6424 25.7524 33.4123 25.7524H28.4134V24.0861H32.1626V19.9203C32.1626 19.2301 32.7222 18.6705 33.4123 18.6705H35.0787C36.2285 18.672 37.1601 19.6036 37.1615 20.7534V27.0021Z"/>
+    </symbol>
+
+</svg>
+
+
+
+    <div class="header__topline">
+        <div class="container">
+            <div class="header__topline__inner">
+                <div class="header__topliner-logo">
+                    <img src="img/header/logo.svg" alt="">
+                </div>
+
+                <div class="header__topline-contacts">
+
+                    <div class="header__topline-contacts__mail">
+                        <img src="img/header/mail-icon.svg" alt="" class="header__topline-contacts-icon">
+                        <div class="header__topline-contacts__mail-text">
+                            Mail Us<br>Info@domain.com
+                        </div>
+                    </div>
+
+                    <div class="header__topline-contacts__phone">
+                        <img src="img/header/phone-icon.svg" alt="" class="header__topline-contacts-icon">
+                        <div class="header__topline-contacts__phone-text">
+                            Call Us<br>(+021) 2336 278
+                        </div>
+                    </div>
+
+                    <div class="header__btn">
+                        <a href="#" class="header__topline-btn">Make Appointment</a>
+                    </div>
+                    
+                </div> 
+            </div>
+        </div> 
+    </div>  <!--/.header__topline-->
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <div class="nav__link">
+                    <a href="#" class="nav__link__item">HOME</a>
+                    <a href="#" class="nav__link__item">ABOUT US</a>
+                    <a href="#" class="nav__link__item">SERVICES</a>
+                    <a href="#" class="nav__link__item">APPOINTMENT</a>
+                    <a href="#" class="nav__link__item">PAGES</a>
+                    <a href="#" class="nav__link__item">BLOG</a>
+                    <a href="#" class="nav__link__item">CONTACT</a>
+                </div>
+                
+                <div class="nav__icon">
+                    <img src="img/nav/facebook.svg" alt="" class="nav__icon__img">
+                    <img src="img/nav/twitter.svg" alt="" class="nav__icon__img">
+                    <img src="img/nav/youtube.svg" alt="" class="nav__icon__img">
+                    <img src="img/nav/instagram.svg" alt="" class="nav__icon__img">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Best Medical & Healthcare Service For Your Family</h1>
+                <h2 class="into__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                <a href="#" class="intro__btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <div class="services__inner">
+                <div class="services__col services__col-f">
+                    <h4 class="service__col__suptitle">Medical Services</h4>
+                    <h3 class="service__col__title">We Maintain Regular Procedures</h3>
+                    <div class="service__col__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services__col services__col-t">
+                    <div class="services__col__item">
+                        <div class="services__col__item__icon">
+                            <img src="img/services/registraion.svg" alt="">
+                        </div>
+                        <div class="services__col__item__title">Registration</div>
+                        <div class="services__col__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="#" class="services__col__item__link">
+                            Learn More<img src="img/services/arrow-r.svg" alt="" class="services__col__item__link-img">
+                        </a>
+                    </div>
+
+
+
+                    <div class="services__col__item services__col__item-l">
+                        <div class="services__col__item__icon">
+                            <img src="img/services/Consultation.svg" alt="">
+                        </div>
+                        <div class="services__col__item__title">Registration</div>
+                        <div class="services__col__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="#" class="services__col__item__link">
+                            Learn More<img src="img/services/arrow-r.svg" alt="" class="services__col__item__link-img">
+                        </a>
+                    </div>
+
+
+
+                    <div class="services__col__item">
+                        <div class="services__col__item__icon services__col__item__icon-b">
+                            <img src="img/services/Waiting.svg" alt="">
+                        </div>
+                        <div class="services__col__item__title">Registration</div>
+                        <div class="services__col__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="#" class="services__col__item__link">
+                            Learn More<img src="img/services/arrow-r.svg" alt="" class="services__col__item__link-img">
+                        </a>
+                    </div>
+
+
+                    <div class="services__col__item services__col__item-l">
+                        <div class="services__col__item__icon">
+                            <img src="img/services/Treatment.svg" alt="">
+                        </div>
+                        <div class="services__col__item__title">Registration</div>
+                        <div class="services__col__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="#" class="services__col__item__link">
+                            Learn More<img src="img/services/arrow-r.svg" alt="" class="services__col__item__link-img">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div> <!--/.services-->
+
+
+
+    <div class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__col about__col-f">
+                    <div class="about__col__main">
+                        <img src="img/about/mainImage.png" alt="" class="about__img">
+                        <div class="about__col__mini-img">
+                            <img src="img/about/miniIMG.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="about__col about__col-t">
+                    <h4 class="about__suptitle">About MedicaLife</h4>
+                    <h3 class="about__title">We Provide Essential Services For Your Health Care</h3>
+                    <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+                    <div class="about__plus">
+
+
+                        <div class="about__plus__item">
+                            <img src="img/about/heart.svg" alt="" class="about__plus__img">
+                            <div class="about__plus__item__content">
+                                <h4 class="about__plus__title">Quality of Care Services</h4>
+                                <div class="about__plus__text">Lorem ipsum dolor sit amet, consecte adipiscing elit</div>
+                            </div>
+                        </div>
+
+
+                        <div class="about__plus__item">
+                            <img src="img/about/doctor.svg" alt="" class="about__plus__img">
+                            <div class="about__plus__item__content">
+                                <h4 class="about__plus__title">QStandards of Treatment</h4>
+                                <div class="about__plus__text">Lorem ipsum dolor sit amet, consecte adipiscing elit</div>
+                            </div>
+                        </div>
+
+
+                        <div class="about__plus__item">
+                            <img src="img/about/snake.svg" alt="" class="about__plus__img">
+                            <div class="about__plus__item__content">
+                                <h4 class="about__plus__title">Infection Prevention</h4>
+                                <div class="about__plus__text">Lorem ipsum dolor sit amet, consecte adipiscing elit</div>
+                            </div>
+                        </div>
+
+
+                        <div class="about__plus__item">
+                            <img src="img/about/clock.svg" alt="" class="about__plus__img">
+                            <div class="about__plus__item__content">
+                                <h4 class="about__plus__title">24/7 Working Time</h4>
+                                <div class="about__plus__text">Lorem ipsum dolor sit amet, consecte adipiscing elit</div>
+                            </div>
+                        </div>
+                    </div> <!--.about__plus-->
+
+                    <div class="about__us">
+                        <div class="about__us__item">
+                           <img src="img/about/Galochka.svg" alt="" class="about__us__img">  24 Hours Emergency Assistance Call Us</div>
+                        <div class="about__us__item">
+                            <img src="img/about/Galochka.svg" alt=""  class="about__us__img">  We are committed to providing healthcare service</div>
+                        <div class="about__us__item">
+                            <img src="img/about/Galochka.svg" alt=""  class="about__us__img">  Really know the true needs and expectations of patients</div>
+                    </div>
+
+
+                    <a href="#" class="about__us__btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="works">
+        <div class="container">
+            <div class="works__inner">
+                <div class="works__col">
+                    <h4 class="works__title">How It Works</h4>
+                    <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+
+                    <div class="works__info">
+                        <div class="works__info__item">
+                            <img src="img/works/regProgress-icon.svg" alt="" class="works__info__item__icon">
+                            <div class="works__info__item__content">
+                                <h4 class="works__info__item__title">1. Registration Process</h4>
+                                <div class="works__info__item__text">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </div>
+
+
+                        <div class="works__info__item">
+                            <img src="img/works/diagnostic-icon.svg" alt="" class="works__info__item__icon">
+                            <div class="works__info__item__content">
+                                <h4 class="works__info__item__title">1. Registration Process</h4>
+                                <div class="works__info__item__text">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </div>
+
+
+                        <div class="works__info__item">
+                            <img src="img/works/Treatment-icon.svg" alt="" class="works__info__item__icon">
+                            <div class="works__info__item__content">
+                                <h4 class="works__info__item__title">1. Registration Process</h4>
+                                <div class="works__info__item__text">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__col">
+                    <img src="img/works/works_icon.png" alt="" class="works__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="appointment">
+        <div class="container">
+            <div class="appointment__inner">
+                <div class="appointment__img">
+                    <img src="img/appointment/appointment.png" alt="">
+                    <div class="appointment__img_table">
+
+                        <div class="appointment__img_table__item">
+                            <svg class="appointment__icon">
+                                <use xlink:href="#appointment"></use>
+                            </svg>
+
+                            <div class="appointment__img__text">Appointment</div>
+                        </div>
+
+
+                        <div class="appointment__img_table__item">
+                            <svg class="appointment__icon">
+                                <use xlink:href="#consultation"></use>
+                            </svg>
+
+                            <div class="appointment__img__text">Consultation</div>
+                        </div>
+
+                        
+                        <div class="appointment__img_table__item">
+                            <svg class="appointment__icon">
+                                <use xlink:href="#treatment"></use>
+                            </svg>
+
+                            <div class="appointment__img__text">Treatment</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appointment__content">
+                    <div class="appointment__suptitle">APPOINTMENT</div>
+                    <div class="appointment__title">Make An Appointment And Get Treatment</div>
+                    <div class="appointment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <a href="#" class="appointment__btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="container">
+                <h4 class="team__title">Our Professional Team</h4>
+                <div class="team__text">Make your workout easier and get faster results</div>
+            <div class="team__inner">
+                <div class="team__arrow__left"></div>
+                <div class="team__arrow__right"></div>
+
+              <div class="team__item">
+                <img src="img//team/item1.png" alt="">
+                <div class="team__item__name">Dr. Olga Posharskaya</div> 
+                <div class="team__item__prof">Neurosurgery</div>
+              </div>
+                
+
+              <div class="team__item">
+                <img src="img//team/item2.png" alt="">
+                <div class="team__item__name">Dr. Natasha Bulochkina</div> 
+                <div class="team__item__prof">Cardiology</div>
+              </div>
+
+              <div class="team__item">
+                <img src="img//team/item3.png" alt="">
+                <div class="team__item__name">Dr. Philip Baily</div> 
+                <div class="team__item__prof">Neurosurgery</div>
+              </div>
+            </div>
+        </div>
+    </div> <!--/.team-->
+
+
+    <div class="testimonials">
+        <div class="container">
+            <h4 class="testimonials__title">Testimonials</h4>
+            <h3 class="testimonials__bigtitle">What Patients Say About Us</h3>
+            <div class="testimonials__inner">
+
+                <div class="testimonials__item">
+                    <div class="testimonials__icon">
+                        <img src="img/testimonials/item1.png" alt="">
+                    </div>
+                    <div class="testimonials__comment">"Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Integer laoret purus  sed mattis placerat. Ut at ante molestie. consectetu adipiscing elit." </div>
+                    <div class="testimonials__name">Smithi John</div>
+                    <div class="testimonials__prof">Buisnessmen</div>
+                </div>
+
+                <div class="testimonials__item">
+                    <div class="testimonials__icon">
+                        <img src="img/testimonials/item2.png" alt="">
+                    </div>
+                    <div class="testimonials__comment">"Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Integer laoret purus  sed mattis placerat. Ut at ante molestie. consectetu adipiscing elit." </div>
+                    <div class="testimonials__name">Bisto John</div>
+                    <div class="testimonials__prof">Buisnessmen</div>
+                </div>
+
+
+                <div class="testimonials__item">
+                    <div class="testimonials__icon">
+                        <img src="img/testimonials/item2.png" alt="">
+                    </div>
+                    <div class="testimonials__comment">"Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Integer laoret purus  sed mattis placerat. Ut at ante molestie. consectetu adipiscing elit." </div>
+                    <div class="testimonials__name">Dani John</div>
+                    <div class="testimonials__prof">Buisnessmen</div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./testimonials-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <img src="img/footer/logo.svg" alt="">
+                    </div>
+                    <div class="footer__text">We are the most powerful and leading software agency in the world</div>
+                    <div class="footer__icon">
+                        <img src="img/footer/Facebook.svg" alt="" class="footer__icon__item">
+                        <img src="img/footer/Instagram.svg" alt="" class="footer__icon__item">
+                        <img src="img/footer/Twitter.svg" alt="" class="footer__icon__item">
+                        <img src="img/footer/Youtube.svg" alt="" class="footer__icon__item">
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Links</div>
+                    <div class="footer__content">
+                        <div class="footer__content__item">Home</div>
+                        <div class="footer__content__item">Services</div>
+                        <div class="footer__content__item">Invest</div>
+                        <div class="footer__content__item">Tutorial</div>
+                        <div class="footer__content__item">Contact</div>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">About</div>
+                    <div class="footer__content">
+                        <div class="footer__content__item">Partners</div>
+                        <div class="footer__content__item">Careers</div>
+                        <div class="footer__content__item">Press</div>
+                        <div class="footer__content__item">Community</div>
+                    </div>
+                </div>
+
+
+                <div class="footer__col">
+                    <div class="footer__title">Resorces</div>
+                    <div class="footer__content">
+                        <div class="footer__content__item">Help</div>
+                        <div class="footer__content__item">Support</div>
+                        <div class="footer__content__item">Stories</div>
+                        <div class="footer__content__item">Reviews</div>
+                        <div class="footer__content__item">Resources</div>
+                    </div>
+                </div>
+
+
+                <div class="footer__col">
+                    <div class="footer__title">Our Office</div>
+                    <address class="footer__address">
+                        Indonesia
+                        Jl. Griya Permata Hijau no D1 
+                        Purwomartani Kalasan 543881
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

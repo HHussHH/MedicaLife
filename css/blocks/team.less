@@ -1,0 +1,117 @@
+//main: ../style.less
+.team{
+    padding-bottom: 100px;
+}
+.team__title{
+    text-align: center;
+    margin-bottom: 30px;
+
+
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 56px;
+    color: @black;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.team__text{
+    text-align: center;
+    margin-bottom: 78px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: @black;
+    font-family: 'Inter', sans-serif;
+}
+.team__inner{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.team__arrow__left{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(76, 64, 247, 0.4);
+    border-radius: 10px;
+    left: -100px;
+    top:40%;
+    transform: translateY(-40%);
+    transition:background .3s linear ;
+
+    background: url("img/team/arrow-L.svg")center no-repeat ;
+    &:hover{
+        background-color: #4C40f7;
+        background: #4C40f7 url("img/team/whiteArrow.svg")  center no-repeat;
+    }
+
+
+}
+
+.team__arrow__left::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left:45%;
+    top:35%;
+    transform: translateX(-45%);
+
+    width: 15px;
+    height: 15px;
+    
+    
+
+    &:hover{
+        background: url("img/team/whiteArrow.svg");
+    }
+}
+
+.team__arrow__right{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(76, 64, 247, 0.4);
+    border-radius: 10px;
+    left:1240px;
+    top:40%;
+    transform: translateY(-40%);
+    transition:background .2s linear ;
+    background: url("img/team/arrow-R.svg")center no-repeat ;
+    &:hover{
+        background-color: #4C40f7;
+        background: #4C40f7 url("img/team/whiteArrow-R.svg")  center no-repeat;
+    }
+}
+
+.team__item__name{
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #313131;
+    
+}
+
+.team__item__prof{
+    text-align: center;
+    cursor: pointer;
+    color: #4C40f7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: transform .2s linear;
+    &:hover{
+        transform: translateY(-5px);
+    }
+    
+}

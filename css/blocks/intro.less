@@ -1,0 +1,69 @@
+//main: ../style.less
+
+.intro{
+    margin-top: 40px;
+    background: url("img/intro/bg.png") right no-repeat;
+    height: 728px;
+    z-index: 1;
+    position: relative;
+    
+
+    &::before{
+        opacity: 1;
+        position: absolute;
+        content: "";
+        display: block;
+        background: #8BD5DC;
+        width: 427px;
+        height: 728px;
+
+        top:0%;
+    }
+}
+.intro__inner{
+    position: absolute;
+    padding-top: 163px;
+    z-index: 1000;
+}
+.intro__title{
+    max-width: 475px;
+    font-family: 'Inter', sans-serif;
+    font-weight: Bold;
+    font-size: 50px;
+    color: #000000;
+    line-height: 60px;
+
+    margin-bottom: 30px;
+}
+
+.into__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #414154;
+    max-width: 519px;
+
+    margin-bottom: 30px;
+}
+
+.intro__btn{
+    display: inline-block;
+    background: #FFF;
+    color:#000000;
+
+    font-weight: 16px;
+    font-weight: 700;
+    line-height: 16px;
+
+    padding: 20px 39px;
+    border-radius: 50px;
+    text-decoration: none;
+
+    border:none;
+
+    transition: color .2s linear;
+
+    &:hover{
+        color:#00eeff;
+    }
+}
